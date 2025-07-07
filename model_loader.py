@@ -5,7 +5,8 @@ from langchain_community.llms import HuggingFacePipeline
 import torch
 
 # Change to any compatible local model
-MODEL_ID = "tiiuae/falcon-7b-instruct"
+# MODEL_ID = "tiiuae/falcon-7b-instruct"
+MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct"
 
 def load_llm(max_new_tokens: int = 200, temperature: float = 0.7):
     """Return a LangChain-compatible LLM object."""
