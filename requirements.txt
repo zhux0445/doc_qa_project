@@ -1,0 +1,12 @@
+langchain==0.2.0
+langchain-openai
+tiktoken
+pypdf
+chromadb
+python-dotenv
+fastapi
+uvicorn
+streamlit
+transformers
+torch
+huggingface_hub
