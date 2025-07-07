@@ -3,6 +3,14 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from langchain_community.llms import HuggingFacePipeline
 import torch
+import os
+from huggingface_hub import login
+from dotenv import load_dotenv
+load_dotenv()
+
+HUGGINGFACE_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
+if HUGGINGFACE_TOKEN:
+    login(HUGGINGFACE_TOKEN)
 
 # Change to any compatible local model
 # MODEL_ID = "tiiuae/falcon-7b-instruct"
