@@ -58,6 +58,19 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 ```bash
 streamlit run frontend/app.py
 ```
+## Authentication
+
+To use gated Hugging Face Models (e.g. LlaMA 3), create a '.env' file in the root directory:
+
+```bash
+HUGGINGFACE_TOKEN=your_token_here
+```
+
+Then run:
+
+```bash
+export HUGGINGFACE_TOKEN=your_token_here
+```
 
 ## Supported Models
 
